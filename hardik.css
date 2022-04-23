@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.ContainerLeft{
+    height: 100vh;
+}
+
+.topnavleft{
+    height: 100vh;
+    overflow: hidden;   
+}
+
+.links{
+    background-color: rgb(73, 71, 71);;
+    text-decoration: none;
+}
+
+/* .Youtube{
+    font-size: 22px;  
+    float: left;
+} */
+
+/* .leftdiv{
+    height: 92vh;
+    overflow: auto; 
+} */
+
+.ContainerRight{
+    position: relative;
+    z-index: 1;
+}
+
+.topnavright{
+    height: 9vh;
+    overflow: visible;
+    } 
+
+.img{
+    height: 27px;
+    width: 27px;    
+    float: right;
+    margin: 19px 12px; 
+}
+
+.p{
+    padding: 24px 17px;
+}
+
+/* .bell{
+    float: right;
+    padding: 17px 14px;  ;
+} */
+
+.Search{
+    /* justify-content: center;
+    align-items: center; */
+    margin:auto;
+    padding: 17px 60px;
+}
+
+.topnavbutton{
+    height: 9vh;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    position: relative;
+}
+
+.color{
+    background-color: rgb(211, 208, 208);
+    color: black;
+}
+
+.carousel{
+    height: 6vh;
+    margin: 7px;
+    margin-top: 12px;
+}
+.video{
+    height: 82vh;
+    overflow: auto;
+    background-color: whitesmoke;
+    
+}
+
+.video1{
+    width: 20.7vw;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.video2{
+    width: 20.7vw;
+    height: 22vh;
+}
+
+.video2img{
+    width: 20.7vw ;
+    height: 22vh ;
+}
+
+.video3{
+    width: 20.7vw;
+    height: 13vh;
+    background-color: whitesmoke;
+}
+
+.video4{
+    width: 3vw;
+    height: 13vh;
+}
+
+.video4img{
+    height: auto;
+    width: 2vw;
+}
+
+.video5{
+    width: 17.7vw;
+    height: 15vh;
+}
+
+/* .microphone{
+    padding: 10px;
+} */
+
