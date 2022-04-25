@@ -1,447 +1,1044 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      *{
-        box-sizing: border-box;
-      }
-      .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    }   
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://kit.fontawesome.com/a4fe4e6566.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/a4fe4e6566.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <title>Document</title>
+  <title>YouTube</title>
+  <link rel="icon" href=".vscode/Assets/Images/You Tube Red.png ">
+  <style>
+    .Search-hidden{
+      display: none;
+    }
+    @media screen and (max-width:1000px) {
+      .Search{
+        display: none;
+      }
+      .hello{
+        display: none;
+      }
+      .video{
+        width: 100%;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .Search-hidden{
+        display: inline-block;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <!-- <div class="container-fluid p-0 bg-primary position-fixed "> -->
-      <!-- Container Left -->
-    <!-- <div class="container-fluid ContainerLeft col-2 p-0 bg-danger float-left "> -->
-      <!-- top nav Left -->
-      <!-- <div class=" topnavleft p-0 col-12 container-fluid bg-light float-left " > -->
-          <!-- <a href=""><i class="fas fa-bars p-3 pt-3 " style="float: left; color: black;"></i></a>
+  <!-- <div class="container-fluid p-0 bg-primary position-fixed "> -->
+  <!-- Container Left -->
+  <!-- <div class="container-fluid ContainerLeft col-2 p-0 bg-danger float-left "> -->
+  <!-- top nav Left -->
+  <!-- <div class=" topnavleft p-0 col-12 container-fluid bg-light float-left " > -->
+  <!-- <a href=""><i class="fas fa-bars p-3 pt-3 " style="float: left; color: black;"></i></a>
           <a href="https://www.youtube.com/"><i class="fab fa-2x fa-youtube pt-2 pl-2" style="float: left; color:red;"></i></a>
           <a href="https://www.youtube.com/" class=" Youtube pt-2 pl-0" style="text-decoration: none; color: black; "><strong>YouTube</strong><sup><small>IN</small></sup></a> -->
 
-          
-          <!-- <div class=" topnavleft p-0 col-10 container-fluid bg-secondary float-left " >gbfd</div> -->
-      </div>
-    </div> 
 
-      <!-- <div class="leftdiv col-12 container-fluid bg-warning  float-left ">
+  <!-- <div class=" topnavleft p-0 col-10 container-fluid bg-secondary float-left " >gbfd</div> -->
+  </div>
+  </div>
+
+  <!-- <div class="leftdiv col-12 container-fluid bg-warning  float-left ">
           
       </div> -->
 
-    <!-- Container Right -->
-    <div class=" ContainerRight col-12 p-0 container-fluid bg-light ">
+  <!-- Container Right -->
+  <div class=" ContainerRight col-12 p-0 container-fluid bg-light ">
 
-      <!-- top nav right -->
-      <div class="topnavright col-12 container-fluid bg-light float-right p-0 ">
-              <img src=".vscode/Assets/Images/hardik.jpeg" class=" img img-fluid rounded-circle" alt="Hardik">
-              <i class="fas fa-bell float-right p" ></i>
-              <i class="fas fa-th float-right p"></i>
-              <i class="fas fa-folder-plus float-right p"></i>
+    <!-- top nav right -->
+    <div class="topnavright col-12 container-fluid bg-light float-right p-0 ">
+      <img src=".vscode/Assets/Images/hardik.jpeg" class=" img img-fluid rounded-circle" alt="Hardik">
+      <a title="Notifications" href=""><i class="fas fa-bell float-right p"></i></a>
+      <a title="YouTube apps" href=""><i class="fas fa-th float-right p"></i></a>
+      <a title="Create" href=""><i class="fas fa-folder-plus float-right p"></i></a>
+      <a title="Search" href=""><i class="fas fa-search float-right p Search-hidden"></i></a>
 
-          <div style="height:25px ; width: 10px; ; float: left; background-color: aqua;">
-              <!-- Sidebar -->
-        <div class="w3-sidebar w3-bar-block " style="float: left; display:none; border: none; z-index:5; margin-top: 61px;width: 15.2vw;" id="mySidebar">
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-compass"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subscriptions</a><hr>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Library</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-compass"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;History</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your videos</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-clock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch later</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liked videos</a><hr>
+      <div style="height:25px ; width: 10px; ; float: left; background-color: aqua;">
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block "
+          style="float: left; display:none; border: none; z-index:5; margin-top: 61px;width: 15.2vw;" id="mySidebar">
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-compass"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subscriptions</a>
+          <hr>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Library</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-compass"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;History</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your videos</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-clock"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Watch later</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liked videos</a>
+          <hr>
           <!-- <p class="m-4 links"><strong>SUBSCRIPTIONS</strong></p> -->
           <!-- <a href="#" class="w3-bar-item w3-button m-2 links"><i class="fab fa-youtube"></i>Link 2</a>
           <a href="#" class="w3-bar-item w3-button m-2">Link 3</a>
           <a href="#" class="w3-bar-item w3-button m-2">Link 1</a>
           <a href="#" class="w3-bar-item w3-button m-2">Link 2</a> -->
           <p class="m-4"><strong>MORE FROM YOUTUBE</strong></p>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouTube Premium</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-film"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Movies</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-dice-d6"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaming</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-satellite-dish"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Live</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-vest-patches"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fashion & Beauty</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-lightbulb"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learning</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports</a><hr>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-flag"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report history</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send Feedback</a><hr>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;">About Press Copyright Contact us Creators Advertise Developers.</a>
-          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;">Terms Privacy Policy & Safety How Youtube works Test new features.</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fab fa-youtube"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YouTube Premium</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-film"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Movies</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-dice-d6"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaming</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-satellite-dish"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Live</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-vest-patches"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fashion & Beauty</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-lightbulb"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learning</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports</a>
+          <hr>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Settings</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-flag"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report history</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-question-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;"><i
+              class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send Feedback</a>
+          <hr>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;">About Press Copyright
+            Contact us Creators Advertise Developers.</a>
+          <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;">Terms Privacy Policy &
+            Safety How Youtube works Test new features.</a>
           <a href="#" class="w3-bar-item w3-button m-2 links" style="text-decoration: none;">&#169; 2021 Google LLC</a>
           <!-- <p class="m-4">&#169; 2021 Google LLC</p> -->
-          
+
         </div>
-  
+
         <!-- Page Content -->
         <div class="w3-overlay " onclick="w3_close()" style="cursor:pointer;" id="myOverlay"></div>
-  
+
         <div>
-          <button class="w3-button bg-light w3-xlarge pl-4" onclick="w3_open()">&#9776;<i class="fab fa-youtube p-0 pl-4" style=" color:red;"></i> <span style="font-size: 30px; ">YouTube<sup><small style="font-size: 13px;">IN</small></sup></span></button>
-          <div class="bg-light" style=" height: 50vh; width: 5vw; position: relative; z-index: 2;">
-            <a href="#"  style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-home"></i> <br><span style="font-size: 8px; margin-left: 21px;">Home</span></a><br><br>
-            <a href="#"  style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-compass"></i> <br><span style="font-size: 8px; margin-left: 17px;">Explore</span></a><br><br>
-            <a href="#"  style="text-decoration: none; color: black; margin-left: 22px; "><i class="fab fa-youtube"></i> <br><span style="font-size: 8px; margin-left: 9px;">Subscriptions</span></a><br><br>
-            <a href="#"  style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-film"></i> <br><span style="font-size: 8px; margin-left: 19px;">Library</span></a>
+          <button class="w3-button bg-light w3-xlarge pl-4" onclick="w3_open()">&#9776;<i
+              class="fab fa-youtube p-0 pl-4" style=" color:red;"></i> <span
+              style="font-size: 30px; ">YouTube<sup><small style="font-size: 13px;">IN</small></sup></span></button>
+          <div class="bg-light hello" style=" height: 50vh; width: 5vw; position: relative; z-index: 2;">
+            <a title="Home" href="Hardik.html" style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-home"></i>
+              <br><span style="font-size: 8px; margin-left: 21px;">Home</span></a><br><br>
+            <a title="Explore" href="https://www.youtube.com/feed/explore" style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-compass"></i>
+              <br><span style="font-size: 8px; margin-left: 17px;">Explore</span></a><br><br>
+            <a title="Subscriptions" href="https://www.youtube.com/feed/subscriptions" style="text-decoration: none; color: black; margin-left: 22px; "><i class="fab fa-youtube"></i>
+              <br><span style="font-size: 8px; margin-left: 9px;">Subscriptions</span></a><br><br>
+            <a title="Library" href="https://www.youtube.com/feed/library" style="text-decoration: none; color: black; margin-left: 23px; "><i class="fas fa-film"></i>
+              <br><span style="font-size: 8px; margin-left: 19px;">Library</span></a>
           </div>
         </div>
-  
+
         <script>
-        function w3_open() {
-          document.getElementById("mySidebar").style.display = "block";
-          document.getElementById("myOverlay").style.display = "block";
-        }
-  
-        function w3_close() {
-          document.getElementById("mySidebar").style.display = "none";
-          document.getElementById("myOverlay").style.display = "none";
-        }
+          function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+          }
+
+          function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+          }
         </script>
+      </div>
+      <form>
+        <div class=" Search input-group w-50">
+          <input type="search" class="form-control " size="20px" placeholder="Search">
+          <div class="input-group-append text-center ">
+            <span class="input-group-text input-group-text-sm"><i class="fas fa-search "></i></span>
+            <span><i class="fas fa-microphone microphone p-2 pl-3"></i></span>
           </div>
-          <form >
-            <div class=" Search input-group w-50 ">
-              <input type="search" class="form-control " size="20px" placeholder="Search" >
-              <div class="input-group-append text-center">
-                <span class="input-group-text input-group-text-sm "><i class="fas fa-search"></i></span>
-                <span><i class="fas fa-microphone microphone p-2 pl-3"></i></span>
-              </div>
-            </div>  
-          </form>
-    </div>
-    
-      <!-- top nav button -->
-      <div class="topnavbutton col-11 container-fluid bg-light float-right ">
-        <hr class="m-0 p-0">
-        <!-- carousel -->
-        <div  id="demo" class="carousel slide " data-ride="carousel" >
-          <!-- The slideshow -->
-          <div class="carousel-inner  carousel">
-            <div class="carousel-item active">
-              <div class="container">
-                <a href="#" class="btn color" >ALL</a>
-                <a href="#" class="btn color" >C++</a>
-                <a href="#" class="btn color" >CSS</a>
-                <a href="#" class="btn color" >Gaana</a>
-                <a href="#" class="btn color" >Music</a>
-                <a href="#" class="btn color" >Mixes</a>
-                <a href="#" class="btn color" >Python</a>
-                <a href="#" class="btn color" >Flutter</a>
-                <a href="#" class="btn color" >Comedy</a>
-                <a href="#" class="btn color" >Courses</a>
-                <a href="#" class="btn color" >T-Series</a>
-                <a href="#" class="btn color" >Web-Series</a>
-                <a href="#" class="btn color" >Abhikrati Foundation</a>
-                <a href="#" class="btn color" >Bootstrap</a>
-                <a href="#" class="btn color" >Android</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                
-                <a href="#" class="btn color" >Bollywood Music</a>
-                <a href="#" class="btn color" >Computer Science</a>
-                <a href="#" class="btn color" >Microsoft Coorporation</a>
-                <a href="#" class="btn color" >Jethalal Champaklal Gada</a>
-                <a href="#" class="btn color" >Recently uploaded</a>
-              </div>
-            </div>
-          </div>
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev " href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon no-gutters "></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
         </div>
-        <hr class="m-0 p-0">
+      </form>
+    </div>
+
+    <!-- top nav button -->
+    <div class="topnavbutton col-12 col-md-11 container-fluid bg-light float-right ">
+      <hr class="m-0 p-0">
+      <!-- carousel -->
+      <div id="demo" class="carousel slide " data-ride="carousel">
+        <!-- The slideshow -->
+        <div class="carousel-inner  carousel">
+          <div class="carousel-item active">
+            <div class="container">
+              <a href="#" class="btn color">ALL</a>
+              <a href="#" class="btn color">C++</a>
+              <a href="#" class="btn color">CSS</a>
+              <a href="#" class="btn color">Gaana</a>
+              <a href="#" class="btn color">Music</a>
+              <a href="#" class="btn color">Mixes</a>
+              <a href="#" class="btn color">Python</a>
+              <a href="#" class="btn color">Flutter</a>
+              <a href="#" class="btn color">Comedy</a>
+              <a href="#" class="btn color">Courses</a>
+              <a href="#" class="btn color">T-Series</a>
+              <a href="#" class="btn color">Web-Series</a>
+              <a href="#" class="btn color">Abhikrati Foundation</a>
+              <a href="#" class="btn color">Bootstrap</a>
+              <a href="#" class="btn color">Android</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+
+              <a href="#" class="btn color">Bollywood Music</a>
+              <a href="#" class="btn color">Computer Science</a>
+              <a href="#" class="btn color">Microsoft Coorporation</a>
+              <a href="#" class="btn color">Jethalal Champaklal Gada</a>
+              <a href="#" class="btn color">Recently uploaded</a>
+              <a href="#" class="btn color">Courses</a>
+              <a href="#" class="btn color">T-Series</a>
+              <a href="#" class="btn color">Web-Series</a>
+              <a href="#" class="btn color">Abhikrati Foundation</a>
+              <a href="#" class="btn color">Bootstrap</a>
+              <a href="#" class="btn color">Android</a>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev " href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon no-gutters "></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <hr class="m-0 p-0">
+    </div>
+
+    <div class="video">
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/bCHtiVZC5lQ">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Taarak.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UC6-F5tO8uklgE9Zy8IvbdFw"><img src="https://yt3.ggpht.com/ytc/AAUvwngNQm1Iu8tC8edkP-TYjcqxb_A5wnWmryUGbVFoORU=s88-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/bCHtiVZC5lQ"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/bCHtiVZC5lQ">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Taarak Mehata ka Ooltah Chashmah  - तारक मेहता - Ep 3092 - Full Episode...</p>
+                      <p style="color: gray;">Sony SAB <i class="fas fa-check-circle"></i><br>2.6M views  4 weeks ago</p>  
+                  </div>
+              </a>
+          </div>
       </div>
 
-      
-      <!-- video -->
-      <div class=" video col-11 container-fluid float-right p-0  ">
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Khabbi Seat.webp" class="video2img" alt="KGF">
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/hEgO047GxaQ">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Telusko.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/c/Telusko"><img src="https://yt3.ggpht.com/ytc/AAUvwnge5NyVX7anyIFrIaWVfxpyOfJifDHzMAU5GMmA=s88-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/hEgO047GxaQ"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/hEgO047GxaQ">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">#1 Python Tutorial for Beginners | Introduction to Python</p>
+                      <p style="color: gray;">Telusko <i class="fas fa-check-circle"></i><br>2,762,540 views•Jun 30, 2018</p>  
+                  </div>
+              </a>
           </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnibPT7KWN5XcDho2xcHnHYcqwvtapv1uh6bD4sx=s48-c-k-c0x00ffffff-no-rj-mo" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Khabbi Seat - Official Video | Ammy Virk Ft Sweetaj Brar...</span>
-              <p style="color: gray;">Barfi music <i class="fas fa-music"></i><br>71,858,203 views•Apr 5, 2021</p>
-            </div>
-          </div>
-        </div>  
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Taarak.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwngNQm1Iu8tC8edkP-TYjcqxb_A5wnWmryUGbVFoORU=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Taarak Mehata ka Ooltah Chashmah  - Full Episode...</span>
-              <p style="color: gray;">Sony SAB <i class="fas fa-music"></i><br>2.6M views  4 weeks ago</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Telusko.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnge5NyVX7anyIFrIaWVfxpyOfJifDHzMAU5GMmA=s88-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">#1 Python Tutorial for Beginners | Introduction to Python</span>
-              <p style="color: gray;">Telusko <i class="fas fa-music"></i><br>2,762,540 views•Jun 30, 2018</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Is Quadar Tumse.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</span>
-              <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Cubicles.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniFhQIvM-UQuPuPWfclzhwWER6sEY6Ut26PpYTZ=s88-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Cubicles - EP 01 - Access Denied</span>
-              <p style="color: gray;">The Viral Fever <i class="fas fa-music"></i><br>10,719,051 views • Dec 10, 2019</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/KGF.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwngf6KYKrOdA1m0nD4Z5s1cASNo9rn0ILvBT3zReAw=s88-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">K.G.F Full Movie | Yash, Srinidhi Shetty, Ananth Nag, Malavika</span>
-              <p style="color: gray;">Goldmines Telefilms <i class="fas fa-music"></i><br>227,132,284 views•Dec 13, 2020</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Kasooti degree.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnjgl4hvDvO_6htGNbJ247Ybpk6pZkZA4jrzdJbc-w=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Yaar Jigree Kasooti Degree - Sharry Mann (Official Video)...</span>
-              <p style="color: gray;">Troll Punjabi <i class="fas fa-music"></i><br>70,732,704 views•Aug 22, 2018</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Hostel.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwngjxzc-Yz61MBWknrAO06Crc_KzR9gQ6llxwiN7=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">KHASA AALA CHAHAR : Hostel Life (Full Song)...</span>
-              <p style="color: gray;">White Hill Dhaakad <i class="fas fa-music"></i><br>14,139,317 views•May 24, 2021</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/UPSC.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnhPglBicWDUm0xV4NHniwJluCnG6X41ZnwP-BOFZA=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">UPSC Girl Aspirant Room Life in Old Rajendra Nagar Delhi</span>
-              <p style="color: gray;">Studento <i class="fas fa-music"></i><br>265,878 views•Mar 21, 2021</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Harry.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnjeHnMHZ7T341QLHqPhQPfsG6ugvg_SV6z6FkYqGw=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">HTML Tutorial: Ids & Classes in HTML | Web Development ...</span>
-              <p style="color: gray;">Code With Harry <i class="fas fa-music"></i><br> 276,956 views•Dec 30, 2019</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Dooriyan.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/GhSdoZRJdjmNzouACxXIHjRt8rUHswGmXSZsYYTNKNQJ5-wVNsp3cCbjkUN35H7VXf5o0eVxvw=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Dooriyan - Dino James ft. Kaprila [Official Music Videos</span>
-              <p style="color: gray;">Sony Music India <i class="fas fa-music"></i><br>22,733,880 views•Jan 13, 2020</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Main Suneya.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnhEWQNuA-mjqxLqnxia6OrJooWWGnyn8KCw3yNbriQ=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Ammy Virk: Main Suneya Video Song Feat | Bhushan Kumar</span>
-              <p style="color: gray;">T-Series <i class="fas fa-music"></i><br>90,114,568 views•May 28, 2020</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Behti Hawa sa.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniayS5WllYgeNjIAPtQ2mvATH8Su5oSs18Qy-VQsg=s48-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Behti Hawa Sa Tha Woh – 3 Idiots | Aamir Khan, Madhavan, Sharman J..</span>
-              <p style="color: gray;">Zee Music Company <i class="fas fa-music"></i><br>8,407,815 views•Apr 9, 2021</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Khabbi Seat.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnibPT7KWN5XcDho2xcHnHYcqwvtapv1uh6bD4sx=s48-c-k-c0x00ffffff-no-rj-mo" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Khabbi Seat - Official Video | Ammy Virk Ft Sweetaj Brar...</span>
-              <p style="color: gray;">Barfi music <i class="fas fa-music"></i><br>71,858,203 views•Apr 5, 2021</p>
-            </div>
-          </div>
-        </div>  
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Is Quadar Tumse.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</span>
-              <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video1  bg-light float-left m-3 ">
-          <div class="video2 bg-light">
-            <img src=".vscode/Assets/Images/Cubicles.webp" class="video2img" alt="KGF">
-          </div>
-          <div class="video3 ">
-            <div class="video4  float-left">
-              <img src="https://yt3.ggpht.com/ytc/AAUvwniFhQIvM-UQuPuPWfclzhwWER6sEY6Ut26PpYTZ=s88-c-k-c0x00ffffff-no-rj" class="video4img img-fluid rounded-circle mx-auto d-block mt-3"  alt="">
-            </div>
-            <div class="video5 float-left pt-2 ">
-              <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
-              <span class="" style="color: black;">Cubicles - EP 01 - Access Denied</span>
-              <p style="color: gray;">The Viral Fever <i class="fas fa-music"></i><br>10,719,051 views • Dec 10, 2019</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-        
-    </div>
-    
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/aOlQhmyog7k">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Khabbi\ Seat.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCmSHlTXTeRBhkAKQTC7wPXA"><img src="https://yt3.ggpht.com/ytc/AAUvwnibPT7KWN5XcDho2xcHnHYcqwvtapv1uh6bD4sx=s48-c-k-c0x00ffffff-no-rj-mo" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/aOlQhmyog7k"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/aOlQhmyog7k">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Khabbi Seat - Official Video | Ammy Virk Ft Sweetaj Brar | Happy Raikoti..</p>
+                      <p style="color: gray;">Barfi music <i class="fas fa-music"></i><br>71,858,203 views•Apr 5, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/M_M9TZW5wUI">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Is\ Quadar\ Tumse.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCNb2pqSm5mQwSJ6S_Dg_Qew"><img src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/M_M9TZW5wUI"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/M_M9TZW5wUI">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</p>
+                      <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/JbBsqmKclXE">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Cubicles.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCNJcSUSzUeFm8W9P7UUlSeQ"><img src="https://yt3.ggpht.com/ytc/AAUvwniFhQIvM-UQuPuPWfclzhwWER6sEY6Ut26PpYTZ=s88-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/JbBsqmKclXE"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/JbBsqmKclXE">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Cubicles - EP 01 - Access Denied</p>
+                      <p style="color: gray;">The Viral Fever <i class="fas fa-check-circle"></i><br>10,719,051 views • Dec 10, 2019</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/ULEQb_l-N08">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/KGF.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCyoXW-Dse7fURq30EWl_CUA"><img src="https://yt3.ggpht.com/ytc/AAUvwngf6KYKrOdA1m0nD4Z5s1cASNo9rn0ILvBT3zReAw=s88-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/ULEQb_l-N08"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/ULEQb_l-N08">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">K.G.F Full Movie | Yash, Srinidhi Shetty, Ananth Nag, Malavika</p>
+                      <p style="color: gray;">Goldmines Telefilms <i class="fas fa-check-circle"></i><br>227,132,284 views•Dec 13, 2020</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/f7cxVDl67Z0?list=RDCMUCAdq6Ae1SlV23DXqhmAw6UA">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Kasooti\ degree.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCAdq6Ae1SlV23DXqhmAw6UA"><img src="https://yt3.ggpht.com/ytc/AAUvwnjgl4hvDvO_6htGNbJ247Ybpk6pZkZA4jrzdJbc-w=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/f7cxVDl67Z0?list=RDCMUCAdq6Ae1SlV23DXqhmAw6UA"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/f7cxVDl67Z0?list=RDCMUCAdq6Ae1SlV23DXqhmAw6UA">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Yaar Jigree Kasooti Degree - Sharry Mann (Official Video)...</p>
+                      <p style="color: gray;">Troll Punjabi <i class="fas fa-check-circle"></i><br>70,732,704 views•Aug 22, 2018</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/Ip4tmEVsd8k">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Hostel.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCQuLyitHTE9LfUAxlhDfgig"><img src="https://yt3.ggpht.com/ytc/AAUvwngjxzc-Yz61MBWknrAO06Crc_KzR9gQ6llxwiN7=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/Ip4tmEVsd8k"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/Ip4tmEVsd8k">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">KHASA AALA CHAHAR : Hostel Life (Full Song)...</p>
+                      <p style="color: gray;">White Hill Dhaakad <i class="fas fa-check-circle"></i><br>14,139,317 views•May 24, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/PGmx__8RYbU">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/UPSC.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCX9YO-Zxj31-T6HtgWGmgKA"><img src="https://yt3.ggpht.com/ytc/AAUvwnhPglBicWDUm0xV4NHniwJluCnG6X41ZnwP-BOFZA=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/PGmx__8RYbU"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/PGmx__8RYbU">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">UPSC Girl Aspirant Room Life in Old Rajendra Nagar Delhi</p>
+                      <p style="color: gray;">Studento <br>265,878 views•Mar 21, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/BucLTOfLQsk">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Harry.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCeVMnSShP_Iviwkknt83cww"><img src="https://yt3.ggpht.com/ytc/AAUvwnjeHnMHZ7T341QLHqPhQPfsG6ugvg_SV6z6FkYqGw=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/BucLTOfLQsk"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/BucLTOfLQsk">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">HTML Tutorial: Ids & Classes in HTML | Web Development Tutorials...</p>
+                      <p style="color: gray;">Code With Harry <i class="fas fa-check-circle"></i><br> 276,956 views•Dec 30, 2019</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/sLykke8q2ls">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Dooriyan.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UC56gTxNs4f9xZ7Pa2i5xNzg"><img src="https://yt3.ggpht.com/GhSdoZRJdjmNzouACxXIHjRt8rUHswGmXSZsYYTNKNQJ5-wVNsp3cCbjkUN35H7VXf5o0eVxvw=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/sLykke8q2ls"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/sLykke8q2ls">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Dooriyan - Dino James ft. Kaprila [Official Music Videos</p>
+                      <p style="color: gray;">Sony Music India <i class="fas fa-check-circle"></i><br>22,733,880 views•Jan 13, 2020</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/9i1dXa13CxA">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Main\ Suneya.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA"><img src="https://yt3.ggpht.com/ytc/AAUvwnhEWQNuA-mjqxLqnxia6OrJooWWGnyn8KCw3yNbriQ=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/9i1dXa13CxA"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/9i1dXa13CxA">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Ammy Virk: Main Suneya Video Song Feat | Bhushan Kumar</p>
+                      <p style="color: gray;">T-Series <i class="fas fa-check-circle"></i><br>90,114,568 views•May 28, 2020</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/ewvddSUEONQ">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Behti\ Hawa\ sa.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg"><img src="https://yt3.ggpht.com/ytc/AAUvwniayS5WllYgeNjIAPtQ2mvATH8Su5oSs18Qy-VQsg=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/ewvddSUEONQ"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/ewvddSUEONQ">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Behti Hawa Sa Tha Woh – 3 Idiots | Aamir Khan, Madhavan, Sharman J...</p>
+                      <p style="color: gray;">Zee Music Company <i class="fas fa-check-circle"></i><br>8,407,815 views•Apr 9, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/E4R5HC8lFHQ">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Mehta.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UC6-F5tO8uklgE9Zy8IvbdFw"><img src="https://yt3.ggpht.com/ytc/AAUvwngNQm1Iu8tC8edkP-TYjcqxb_A5wnWmryUGbVFoORU=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/E4R5HC8lFHQ"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/E4R5HC8lFHQ">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Taarak Mehta Ka Ooltah Chashmah - Ep 2815 - Full Episode - 10th Sept</p>
+                      <p style="color: gray;">Sony SAB <i class="fas fa-check-circle"></i><br>9,475,332 views•Sep 12, 2019</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/i9DpKqlIMyc">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Badla.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg"><img src="https://yt3.ggpht.com/ytc/AAUvwniayS5WllYgeNjIAPtQ2mvATH8Su5oSs18Qy-VQsg=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/i9DpKqlIMyc"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/i9DpKqlIMyc">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Badla - Title Track | Full Video | Amitabh Bachchan & Taapsee ...</p>
+                      <p style="color: gray;">Zee Music Company <i class="fas fa-check-circle"></i><br>37,805 views•Jun 11, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/hoNb6HuNmU0">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Khairiyat.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA"><img src="https://yt3.ggpht.com/ytc/AAUvwnhEWQNuA-mjqxLqnxia6OrJooWWGnyn8KCw3yNbriQ=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/hoNb6HuNmU0"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/hoNb6HuNmU0">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Full Song: KHAIRIYAT | CHHICHHORE | Sushant,...</p>
+                      <p style="color: gray;">T-Series <i class="fas fa-check-circle"></i><br>615,980,875 views•Sep 26, 2019</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/v6eMKfr8qEY">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Pani\ Di\ GAl.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCopY0NAzASqmD6eVaRj2TFQ"><img src="https://yt3.ggpht.com/ytc/AAUvwniPvpUY9yACG8H3_ubZng686I9vuzQ6gdDOkWJQKA=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/v6eMKfr8qEY"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/v6eMKfr8qEY">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">PANI DI GAL: Maninder Buttar feat. Jasmin Bhasin | Asees Kaur...</p>
+                      <p style="color: gray;">White Hill Music <i class="fas fa-check-circle"></i><br>143,918,634 views•Apr 1, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/_tgq-EvMOhE">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Oye\ Hoye\ Hoye.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA"><img src="https://yt3.ggpht.com/ytc/AAUvwniPvpUY9yACG8H3_ubZng686I9vuzQ6gdDOkWJQKA=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/_tgq-EvMOhE"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/_tgq-EvMOhE">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Jassie Gill: Oye Hoye Hoye | Simar Kaur | Dhanashree | Avvy Sra</p>
+                      <p style="color: gray;">T-Series <i class="fas fa-check-circle"></i><br>75,446,291 views•Mar 12, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/5zTAZExZBCI">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Abhikrati.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCEUEcM2ixJ8jnxFpfDeCZZA"><img src="https://yt3.ggpht.com/4uZySR_qEHR_mRht9ih2tH78I1_mdQxCQm3xozhHCNOzrQyk9FEZWv9mlzj58guM6Fsz-EHw=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/5zTAZExZBCI"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/5zTAZExZBCI">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Amazing Performance of one of the slum kid || Abhikrati Foundation</p>
+                      <p style="color: gray;">Abhikrati Foundation<br>9 views•Jun 14, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/8rs23FzAQaI?list=PLZnxqowr6IKhMv9_rzass-qWavKE7_SHB">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Covid.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UC1SzkJRHwqp4uAtcnGmCAwQ"><img src="https://yt3.ggpht.com/ytc/AAUvwng3dUsDXUtRBzz2q9aiM7r4sh6KduTGFauERhYgDA=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/8rs23FzAQaI?list=PLZnxqowr6IKhMv9_rzass-qWavKE7_SHB"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/8rs23FzAQaI?list=PLZnxqowr6IKhMv9_rzass-qWavKE7_SHB">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Impact of COVID-19 on Kidneys | Dr. B. Aravind Reddy | CARE Hospitals</p>
+                      <p style="color: gray;">CARE Hospitals <i class="fas fa-check-circle"></i><br>637,670 views•May 29, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/ULEQb_l-N08">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/KGF.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCyoXW-Dse7fURq30EWl_CUA"><img src="https://yt3.ggpht.com/ytc/AAUvwngf6KYKrOdA1m0nD4Z5s1cASNo9rn0ILvBT3zReAw=s88-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/ULEQb_l-N08"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/ULEQb_l-N08">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">K.G.F Full Movie | Yash, Srinidhi Shetty, Ananth Nag, Malavika</p>
+                      <p style="color: gray;">Goldmines Telefilms <i class="fas fa-check-circle"></i><br>227,132,284 views•Dec 13, 2020</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/M_M9TZW5wUI">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Is\ Quadar\ Tumse.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;"><a href="https://www.youtube.com/channel/UCNb2pqSm5mQwSJ6S_Dg_Qew"><img src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a></div>
+                  <a href="https://youtu.be/M_M9TZW5wUI"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/M_M9TZW5wUI">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</p>
+                      <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/9i1dXa13CxA">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Main\ Suneya.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UCq-Fj5jknLsUf-MWSy4_brA"><img src="https://yt3.ggpht.com/ytc/AAUvwnhEWQNuA-mjqxLqnxia6OrJooWWGnyn8KCw3yNbriQ=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/9i1dXa13CxA"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/9i1dXa13CxA">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Ammy Virk: Main Suneya Video Song Feat | Bhushan Kumar</p>
+                      <p style="color: gray;">T-Series <i class="fas fa-check-circle"></i><br>90,114,568 views•May 28, 2020</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+      <div style="background-color: blue; height: 285px; width: 310px; margin: 15px; float: left;">
+          <a href="https://youtu.be/E4R5HC8lFHQ">
+              <div style=" height: 175px; width: 310px; background: url(.vscode/Assets/Images/Mehta.webp); background-size: auto;"></div>
+          </a>
+          <div style="background-color: burlywood; height: 110px ; width: 310px;">
+              <div style="background-color: whitesmoke; height: 110px; width: 40px; float: left;">
+                  <div style="background-color: whitesmoke; height: 60px; width: 40px;">
+                      <a href="https://www.youtube.com/channel/UC6-F5tO8uklgE9Zy8IvbdFw"><img src="https://yt3.ggpht.com/ytc/AAUvwngNQm1Iu8tC8edkP-TYjcqxb_A5wnWmryUGbVFoORU=s48-c-k-c0x00ffffff-no-rj" style="height: 30px; width: 30px; margin: 18px 5px; border-radius: 15px;" alt="Hardik"></a>
+                  </div>
+                  <a href="https://youtu.be/E4R5HC8lFHQ"><div style="background-color: whitesmoke; height: 50px; width: 40px;"></div></a>
+              </div>
+              <a href="https://youtu.be/E4R5HC8lFHQ">
+                  <div style="background-color: whitesmoke; height: 110px; width: 270px; float: right;">
+                      <i class="fas fa-ellipsis-v" style="float: right; margin: 17px 8px; text-decoration: none; color: black;"></i>
+                      <p style="color: black;">Taarak Mehta Ka Ooltah Chashmah - Ep 2815 - Full Episode - 10th Sept </p>
+                      <p style="color: gray;">Sony SAB <i class="fas fa-check-circle"></i><br>9,475,332 views•Sep 12, 2019</p>  
+                  </div>
+              </a>
+          </div>
+      </div>
+
+  
 </div>
+
+
+
+
+
+    <!-- video -->
+    <!-- <div class=" video col-11 container-fluid float-right p-0  ">
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Khabbi Seat.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnibPT7KWN5XcDho2xcHnHYcqwvtapv1uh6bD4sx=s48-c-k-c0x00ffffff-no-rj-mo"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Khabbi Seat - Official Video | Ammy Virk Ft Sweetaj Brar...</span>
+            <p style="color: gray;">Barfi music <i class="fas fa-music"></i><br>71,858,203 views•Apr 5, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Taarak.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwngNQm1Iu8tC8edkP-TYjcqxb_A5wnWmryUGbVFoORU=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Taarak Mehata ka Ooltah Chashmah - Full Episode...</span>
+            <p style="color: gray;">Sony SAB <i class="fas fa-music"></i><br>2.6M views 4 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Telusko.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img src="https://yt3.ggpht.com/ytc/AAUvwnge5NyVX7anyIFrIaWVfxpyOfJifDHzMAU5GMmA=s88-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">#1 Python Tutorial for Beginners | Introduction to Python</span>
+            <p style="color: gray;">Telusko <i class="fas fa-music"></i><br>2,762,540 views•Jun 30, 2018</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Is Quadar Tumse.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</span>
+            <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Cubicles.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img src="https://yt3.ggpht.com/ytc/AAUvwniFhQIvM-UQuPuPWfclzhwWER6sEY6Ut26PpYTZ=s88-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Cubicles - EP 01 - Access Denied</span>
+            <p style="color: gray;">The Viral Fever <i class="fas fa-music"></i><br>10,719,051 views • Dec 10, 2019</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/KGF.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwngf6KYKrOdA1m0nD4Z5s1cASNo9rn0ILvBT3zReAw=s88-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">K.G.F Full Movie | Yash, Srinidhi Shetty, Ananth Nag, Malavika</span>
+            <p style="color: gray;">Goldmines Telefilms <i class="fas fa-music"></i><br>227,132,284 views•Dec 13, 2020
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Kasooti degree.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnjgl4hvDvO_6htGNbJ247Ybpk6pZkZA4jrzdJbc-w=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Yaar Jigree Kasooti Degree - Sharry Mann (Official Video)...</span>
+            <p style="color: gray;">Troll Punjabi <i class="fas fa-music"></i><br>70,732,704 views•Aug 22, 2018</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Hostel.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img src="https://yt3.ggpht.com/ytc/AAUvwngjxzc-Yz61MBWknrAO06Crc_KzR9gQ6llxwiN7=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">KHASA AALA CHAHAR : Hostel Life (Full Song)...</span>
+            <p style="color: gray;">White Hill Dhaakad <i class="fas fa-music"></i><br>14,139,317 views•May 24, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/UPSC.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnhPglBicWDUm0xV4NHniwJluCnG6X41ZnwP-BOFZA=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">UPSC Girl Aspirant Room Life in Old Rajendra Nagar Delhi</span>
+            <p style="color: gray;">Studento <i class="fas fa-music"></i><br>265,878 views•Mar 21, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Harry.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnjeHnMHZ7T341QLHqPhQPfsG6ugvg_SV6z6FkYqGw=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">HTML Tutorial: Ids & Classes in HTML | Web Development ...</span>
+            <p style="color: gray;">Code With Harry <i class="fas fa-music"></i><br> 276,956 views•Dec 30, 2019</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Dooriyan.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/GhSdoZRJdjmNzouACxXIHjRt8rUHswGmXSZsYYTNKNQJ5-wVNsp3cCbjkUN35H7VXf5o0eVxvw=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Dooriyan - Dino James ft. Kaprila [Official Music Videos</span>
+            <p style="color: gray;">Sony Music India <i class="fas fa-music"></i><br>22,733,880 views•Jan 13, 2020</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Main Suneya.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnhEWQNuA-mjqxLqnxia6OrJooWWGnyn8KCw3yNbriQ=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Ammy Virk: Main Suneya Video Song Feat | Bhushan Kumar</span>
+            <p style="color: gray;">T-Series <i class="fas fa-music"></i><br>90,114,568 views•May 28, 2020</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Behti Hawa sa.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwniayS5WllYgeNjIAPtQ2mvATH8Su5oSs18Qy-VQsg=s48-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Behti Hawa Sa Tha Woh – 3 Idiots | Aamir Khan, Madhavan, Sharman
+              J..</span>
+            <p style="color: gray;">Zee Music Company <i class="fas fa-music"></i><br>8,407,815 views•Apr 9, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Khabbi Seat.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnibPT7KWN5XcDho2xcHnHYcqwvtapv1uh6bD4sx=s48-c-k-c0x00ffffff-no-rj-mo"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Khabbi Seat - Official Video | Ammy Virk Ft Sweetaj Brar...</span>
+            <p style="color: gray;">Barfi music <i class="fas fa-music"></i><br>71,858,203 views•Apr 5, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Is Quadar Tumse.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnjA24Cb-2JILnJa-rT7xVEqknDgDmsxXCiL2DGq=s48-c-k-c0x00ffffff-no-rj-mo"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Is Qadar Tumse Humein Pyar Ho Gaya | College Life Love Story...</span>
+            <p style="color: gray;">Sainix <i class="fas fa-music"></i><br>5,721,397 views•May 12, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video1  bg-light float-left m-3 ">
+        <div class="video2 bg-light">
+          <img src=".vscode/Assets/Images/Cubicles.webp" class="video2img" alt="KGF">
+        </div>
+        <div class="video3 ">
+          <div class="video4  float-left">
+            <img src="https://yt3.ggpht.com/ytc/AAUvwniFhQIvM-UQuPuPWfclzhwWER6sEY6Ut26PpYTZ=s88-c-k-c0x00ffffff-no-rj"
+              class="video4img img-fluid rounded-circle mx-auto d-block mt-3" alt="">
+          </div>
+          <div class="video5 float-left pt-2 ">
+            <i class="fas fa-ellipsis-v m-2" style="float: right; "></i>
+            <span class="" style="color: black;">Cubicles - EP 01 - Access Denied</span>
+            <p style="color: gray;">The Viral Fever <i class="fas fa-music"></i><br>10,719,051 views • Dec 10, 2019</p>
+          </div>
+        </div>
+      </div>
     
+    </div> -->
+    <!-- end -->
+  </div>
+
+  </div>
+
 
 </body>
+
 </html>
